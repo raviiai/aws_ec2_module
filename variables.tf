@@ -13,3 +13,12 @@ variable "ami" {
 variable "instance_type" {
   default = "t2.micro"
 }
+
+################
+## VPC
+################
+
+variable "cidr_block" {
+  description = "CIDR Range"
+  default     = "10.0.0.0/24"
+}
